@@ -14,28 +14,31 @@ public class Main {
 //        System.out.println(mll.removeFirst());
 
         System.out.println(mll);
+        System.out.println(mll.indexOf(25)); // Поиск индекса по значению
+        System.out.println(mll.indexOf(5));
+        System.out.println(mll.indexOf(45));
 
-        mll.insertLast(2);
-        mll.insertLast(22);
-
-        System.out.println(mll);
-
-        mll.insert(2, 777);
-        System.out.println(mll);
-//        System.out.println(mll.removeFirst());
-//        System.out.println(mll);
-//        System.out.println(mll.removeLast());
-//        System.out.println(mll);
-
-        mll.insert(2, 111);
-        mll.insert(2, 22);
-        System.out.println(mll);
+//        mll.insertLast(2);
+//        mll.insertLast(22);
 //
-        System.out.println(mll.remove(22));
-        System.out.println(mll);
-
-        for (Integer x : mll) {
-            System.out.println(x);
-        }
+//        System.out.println(mll);
+//
+//        mll.insert(2, 777);
+//        System.out.println(mll);
+////        System.out.println(mll.removeFirst());
+////        System.out.println(mll);
+////        System.out.println(mll.removeLast());
+////        System.out.println(mll);
+//
+//        mll.insert(2, 111);
+//        mll.insert(2, 22);
+//        System.out.println(mll);
+////
+//        System.out.println(mll.remove(22));
+//        System.out.println(mll);
+//
+//        for (Integer x : mll) {
+//            System.out.println(x);
+//        }
     }
 }

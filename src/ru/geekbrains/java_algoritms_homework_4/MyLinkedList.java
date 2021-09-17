@@ -182,6 +182,20 @@ public class MyLinkedList<T> implements Iterable<T> {
         return size;
     }
 
+    public int indexOf(T item) { // Метод возвращения индекса по значению
+        if (isEmpty()) {
+            return -1;
+        }
+        Node current = first;
+        for (int i = 0; i < size; i++) {
+            if (current.getValue().equals(item)) {
+                return i;
+            }
+            current = current.getNext();
+        }
+        return -1;
+    }
+
     @Override
     public String toString() {
         Node current = first;
