@@ -53,7 +53,7 @@ public class MyLinkedList<T> implements Iterable<T> {
         return new Iter();
     }
 
-    private class Iter implements Iterator<T>{
+    private class Iter implements Iterator<T> {
         Node current = new Node(null, first);
 
         @Override
@@ -137,7 +137,7 @@ public class MyLinkedList<T> implements Iterable<T> {
             insertFirst(item);
             return;
         }
-        if (index == size ) {
+        if (index == size) {
             insertLast(item);
             return;
         }
@@ -176,6 +176,10 @@ public class MyLinkedList<T> implements Iterable<T> {
 
     public boolean isEmpty() {
         return first == null;
+    }
+
+    public boolean isFull() {
+        return getLast() != null;
     }
 
     public int size() {
